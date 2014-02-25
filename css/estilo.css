@@ -1,0 +1,27 @@
+*{margin:0;padding:0;}
+
+/* --- Form5-Switch --- */
+.form5-switch{display:block;width:100px;height:28px;border:2px solid black;position:relative;overflow:hidden;margin:20% auto;}
+    
+    .form5-switch a{display:block;width:100%;height:100%;position:absolute;top:0;left:0;z-index:3;}
+    
+    .form5-switch .form5-switch-on{display:block;background:#e8eaec;color:#fff;width:50%;height:100%;position:absolute;top:0;left:-60px;}
+    .form5-switch .form5-switch-on.active{left:0;}
+    .form5-switch .form5-switch-on p{display:block;color:black;font-family:open sans;font-size:100%;text-align:center;line-height:28px;}
+    
+    .form5-switch .form5-switch-off{display:block;background:#27A1CA;color:#fff;width:50%;height:100%;position:absolute;top:0;right:-60px;}
+    .form5-switch .form5-switch-off.active{right:0;}
+    .form5-switch .form5-switch-off p{display:block;color:white;font-family:open sans;font-size:100%;text-align:center;line-height:28px;}
+    
+    .form5-switch .form5-switch-off, .form5-switch .form5-switch-on{-webkit-transition:all 0.5s ease-in;-moz-transition:all 0.5s ease-in;-ms-transition:all 0.5s ease-in;-o-transition:all 0.5s ease-in;transition:all 0.5s ease-in;}
+    
+    
+/* --- Form5-boxTag --- */
+.form5-boxtag{display:block;width:500px;border:2px solid black;margin:2% auto;overflow:hidden;padding:5px;}
+    
+    .form5-boxtag [type=text]{display:inline-block;font-size:100%;border:0;vertical-align:middle;outline:0px;}
+	.form5-boxtag [type=text].isset{color:red;}
+    .form5-boxtag span{display:inline-block;background:#06c;color:white;position:relative;overflow:hidden;padding:5px;padding-right:25px;margin:5px 2.5px;text-overflow: ellipsis;vertical-align:middle;}
+    .form5-boxtag span [type=button]{display:inline;background:#05b;color:white;font-size:100%;font-weight:bold;width:20px;height:100%;position:absolute;top:0;right:0;border:0px;border-left:1px solid white;cursor:pointer;}
+    
+    

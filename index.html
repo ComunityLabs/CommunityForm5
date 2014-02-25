@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    
+    <!-- Javascript --->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/load.js"></script>
+    
+    <!-- Estilos css --->
+    <link type="text/css" rel="stylesheet" href="css/estilo.css">
+    
+	<title>CommunityForm5</title>
+</head>
+
+<body>
+
+	<div id="content">
+
+		<input type="checkbox" data-form5-type="switch" value="si">
+
+		<input type="checkbox" data-form5-type="switch" value="no">
+
+		<input type="checkbox" data-form5-type="switch" value="si">
+
+		<input type="text" data-form5-type="boxtag" id="rock2" data-message="hola" value="rock">
+
+		<input type="text" data-form5-type="boxtag" id="rock3" data-message="hola" value="viva el rock">
+
+		<input type="text" data-form5-type="boxtag" id="rock4" data-message="hola" value="viva el rock">
+	
+    	<input type="button" onClick="alert($('*[data-form5-boxtag-data]').eq(1).val())" value="Saber">
+    
+	</div>
+
+</body>
+
+<script type="application/javascript">
+	
+	// Cargamos el script - form5
+	loaded(['js/utilities.js','js/CommunityForm5.js']);
+	
+	// Window loaded
+	$(window).bind('load',function(){
+
+		$('[data-form5-type]').CommunityForm5();
+
+	});
+
+</script>
